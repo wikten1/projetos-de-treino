@@ -16,6 +16,7 @@
 
 body{
     display: grid;
+    background: var(--cor0);
 }
 
 /*Parte de cima*/
@@ -93,9 +94,9 @@ header>nav>ul>li:hover{
 /* Conteuúdo principal */
 
 main{
-    
-    margin: auto;
+    margin: 20px auto;
     width: 90%;
+    height: 500px;
     display: grid;
     grid-template-columns: 600px  150px  150px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -106,11 +107,13 @@ main{
 
 main>span, main section{
     background-color: #F26DAB;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 main>section{
     grid-row: 1/4;
     justify-self: stretch;
+    max-height: 500px;
 }
 
 main>section>iframe{
@@ -125,6 +128,17 @@ main>section>iframe{
 main>span{
     width: 150px;
     height: 150px;
+}
+
+main>span:hover{
+    width: 160px;
+    height: 160px;
+}
+
+main>span>img:hover{
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
 }
 
 /* Footer */
