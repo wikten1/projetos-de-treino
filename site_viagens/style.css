@@ -80,6 +80,10 @@ header>nav>ul>li{
     cursor: pointer;
 }
 
+header>nav>img{
+    display: none;
+}
+
 header>nav>ul>li{
     text-decoration: none;
     color: white;
@@ -96,7 +100,7 @@ header>nav>ul>li:hover{
 main{
     margin: 20px auto;
     width: 90%;
-    height: 500px;
+    height: auto;
     display: grid;
     grid-template-columns: 600px  150px  150px;
     grid-template-rows: 1fr 1fr 1fr;
@@ -106,7 +110,7 @@ main{
 }
 
 main>span, main section{
-    background-color: #F26DAB;
+    background-color: var(--cor4);
     box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -114,6 +118,7 @@ main>section{
     grid-row: 1/4;
     justify-self: stretch;
     max-height: 500px;
+    position: relative;
 }
 
 main>section>iframe{
@@ -149,4 +154,31 @@ footer{
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+
+@media (max-width: 1080px){
+    main{
+        grid-template-columns: minmax(310px, 600px) ;
+    }
+
+    main>section>iframe{
+        width: 100%;
+    }
+
+    header>nav>ul{
+        display: none;
+    }
+
+    header>nav>img{
+        display: inline;
+        width: 30px;
+        height: 30px;
+    }
+
+    header>nav>img:hover{
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+    }
+    
 }

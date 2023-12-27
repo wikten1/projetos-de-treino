@@ -18,6 +18,14 @@ function trocaLondres(){
     video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/OR6ZaL732p8?si=ygbg-b5JREf4MKHd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
 }
 
+function trocaSalvador(){
+    var video = document.getElementById('iframe-video');
+    video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/WYQRiLcLCsY?si=jRB5B_EN6YxlxtPN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+}
 
+function trocaMadrid(){
+    var video = document.getElementById('iframe-video');
+    video.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/yE3154TcsIY?si=xeX1px6abbax3taG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+}
 
 
