@@ -15,7 +15,6 @@
 }
 
 body{
-    display: grid;
     background: var(--cor0);
 }
 
