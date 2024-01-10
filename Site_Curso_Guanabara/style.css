@@ -1,9 +1,124 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'cyber';
+    src: url('Fontes/EaseOfUse.ttf') format('truetype');
+}
 
+:root{
+    --cor0: #ffffff;
+    --cor1: #2196F3;
+    --cor2: #f26430;
+    --cor3: #11457E;
+    --cor4: #040C17;
+
+    /*Fontes*/
+    --font1: 'cyber', Arial, Helvetica, sans-serif;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: #11467e;
+}
+
+/*Topo do site */
+header{
+    height: 400px;
+    width: 100vw;
+    text-align: center;
+    background-image: url(Imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+header>h1{
+    font-family: var(--font1);
+    color: var(--cor0);
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    text-shadow: 1px 2px 3px #00000061;
+}
+
+header>img{
+    height: 250px;
+    margin-top: 10px;
+}
+
+header>nav>ul{
+    display: flex;
+    justify-content: center;
+}
+
+header>nav>ul>li{
+    margin-left: 15px;
+    list-style: none;
+    background-color: var(--cor1);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 1px 2px 3px #00000061;
+}
+
+    header>nav>ul>li:nth-child(odd){
+        background-color: var(--cor2);
+    }
+
+header>nav>ul>li:hover{
+    padding: 8px;
+}
+
+header>nav>ul>li>a{
+    color: var(--cor0);
+    text-decoration: none;
+}
+
+/* Conteúdo principal */
+main{
+    max-width: 800px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.158);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px repeat(3, 1fr);
+    row-gap: 20px; 
+    padding-bottom: 30px;
+}
+
+h2{
+    font-family: var(--font1);
+    text-align: center;
+    color: var(--cor0);
+    grid-column: 1/4;
+    padding-top: 20px;
+    text-shadow: 1px 2px 3px #00000061;
+}
+
+main>div>a{
+    text-decoration: none;
+}
+
+main>div>a>img{
+    max-width: 80%;
+    height: 90%;
+    margin-left: 20px;
+    border: 2px solid var(--cor1);
+    box-shadow: 1px 2px 3px #00000061;
+}
+
+main>div>a>img:hover{
+    max-width: 85%;
+    height: 95%;
+}
+
+main>div>a>h3{
+    text-align: center;
+    color: var(--cor0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
