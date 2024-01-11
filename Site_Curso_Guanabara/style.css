@@ -122,3 +122,35 @@ main>div>a>h3{
     color: var(--cor0);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/*Footer*/
+
+footer{
+    height: 150px;
+    padding-top: 40px;
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+}
+
+footer>p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    font-weight: bold;
+}
+
+#contato{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#contato>p{
+    padding-right: 10px;
+}
+
+#contato>a>img{
+    padding-right: 15px;
+}
