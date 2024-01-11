@@ -155,7 +155,7 @@ footer>p{
     padding-right: 15px;
 }
 
-@media (max-width: 375px){
+@media (max-width: 500px){
     main{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(9, 1fr);
